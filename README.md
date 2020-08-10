@@ -231,3 +231,45 @@ const listOfBars = ???
 
 
 ````
+
+
+## Object mapping
+
+Given the following: 
+
+```
+type Order = {
+    id: string; 
+    name: string; 
+    value: number; 
+}
+
+type OrderMap = Record<string, Order>; 
+
+
+const orders : Array<Order> = [
+    {
+        id: "1", 
+        name: "a", 
+        value: 1
+    },
+        {
+        id: "2", 
+        name: "b", 
+        value: 2
+    },
+    {
+        id: "3", 
+        name: "c", 
+        value: 3
+    }
+]; 
+```
+
+Use the `Object.reduce` function to convert the array of Orders into a map of orders. 
+
+
+
+
+
+```
