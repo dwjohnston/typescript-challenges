@@ -266,11 +266,17 @@ const orders : Array<Order> = [
 ]; 
 ```
 
-Use the `Object.reduce` function to convert the array of Orders into a map of orders, indexed by id. 
+Create a function that uses  the `Object.reduce` function to convert the array of Orders into a map of orders, indexed by id. 
 
 ie. the final result should be 
 
 ```
+
+
+function createOrderMap(array: Array<Order>) : OrderMap {
+    //implement
+}
+
 const orderMap: OrderMap = {
      "aaa": {
         id: "aaa", 
