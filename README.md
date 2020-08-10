@@ -225,7 +225,7 @@ type Bar = {
 const listOfFoosAnBars = getListOfFoosAndBars(); // You need to implmeent this function. 
 
 
-//These need to be typed objects. How do you sort them? 
+//These need to be typed objects. How do you seperate them? 
 const listOfFoos = ??? 
 const listOfBars = ???
 
