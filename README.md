@@ -152,4 +152,82 @@ const c : User = {
 
 ```
 
-7. Create a type 
+## Generics
+
+1. Create a type `PurchaseOrder` using generics, where the following would be valid: 
+
+```
+
+type Book = {
+     name: string; 
+     value: number; 
+}
+
+type Movie = {
+    title: string; 
+    year: number; 
+}
+
+
+// incomplete! you need to add generic typings
+type PurchaseOrder = {
+    date: string; 
+    item: ???
+}
+
+
+// incomplete! add typings
+function getItemFromPurchaseOrder(purchaseOrder) {
+    return purchaseOrder.item; 
+}
+
+const a = getItemFromPurchaseOrder({
+    date: "today", 
+    item: {
+        name: 'book', 
+        value 1, 
+    }
+});
+
+console.log(a.name); //shouldn't error
+console.log(a.title); //should error 
+
+const b = getItemFromPurchaseOrder({
+    date: "today", 
+    item: {
+        tile: 'movie', 
+        year 1, 
+    }
+});
+
+console.log(b.name); //should error
+console.log(b.title); //shouldn't error 
+
+```
+
+2. Declare an async function that returns a an item of type `Foo` when the promise resolves. 
+
+
+3.  Given the types `Foo` and `Bar` write a function that will return an array of both `Foos` and `Bar`, and then seperate the foos and bars into seperate lists. 
+
+```
+type Foo = {
+   foo: string; 
+}
+
+type Bar = {
+   bar: number; 
+}
+
+```
+
+```
+const listOfFoosAnBars = getListOfFoosAndBars(); // You need to implmeent this function. 
+
+
+//These need to be typed objects. How do you sort them? 
+const listOfFoos = ??? 
+const listOfBars = ???
+
+
+````
