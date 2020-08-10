@@ -249,24 +249,48 @@ type OrderMap = Record<string, Order>;
 
 const orders : Array<Order> = [
     {
-        id: "1", 
+        id: "aaa", 
         name: "a", 
         value: 1
     },
         {
-        id: "2", 
+        id: "bbb", 
         name: "b", 
         value: 2
     },
     {
-        id: "3", 
+        id: "ccc", 
         name: "c", 
         value: 3
     }
 ]; 
 ```
 
-Use the `Object.reduce` function to convert the array of Orders into a map of orders. 
+Use the `Object.reduce` function to convert the array of Orders into a map of orders, indexed by id. 
+
+ie. the final result should be 
+
+```
+const orderMap: OrderMap = {
+     "aaa": {
+        id: "aaa", 
+        name: "a", 
+        value: 1
+    },
+     "bbb" : {
+        id: "bbb", 
+        name: "b", 
+        value: 2
+    },
+    "ccc" : {
+        id: "ccc", 
+        name: "c", 
+        value: 3
+    }
+
+}
+
+```
 
 
 
